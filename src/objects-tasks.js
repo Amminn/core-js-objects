@@ -517,7 +517,7 @@ const cssSelectorBuilder = {
     newSelector.selector = {
       combined: `${selector1.stringify()} ${combinator} ${selector2.stringify()}`,
     };
-    newSelector.stringify = function () {
+    newSelector.stringify = function stringifySelector() {
       return this.selector.combined;
     };
     return newSelector;
